@@ -13,7 +13,7 @@ var serviceworksStrategy = new LocalStrategy(
       return done(null, false, { message: 'Incorrect username.' });
     }
 
-    if(password != config.password) {
+    if(password !== config.password) {
       return done(null, false, { message: 'Incorrect password.' });
     }
 

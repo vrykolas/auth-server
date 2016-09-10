@@ -1,8 +1,6 @@
 /**
  * Module dependencies.
  */
-var passport = require('passport');
-
 var User = require('../models/user');
 var authentication = require('../libs/authentication');
 
