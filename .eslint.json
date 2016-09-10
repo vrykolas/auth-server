@@ -1,0 +1,32 @@
+
+{
+  "env": {
+      "browser": true
+  },
+  "extends": "standard",
+  "plugins": [
+    "standard"
+  ],
+  "rules": {
+    "keyword-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": false,
+        "overrides": {
+          "case": { "after": true },
+          "else": { "after": true },
+          "from": { "after": true },
+          "return": { "after": true },
+          "try": { "after": true }
+        }
+      }
+    ],
+    "semi": [2, "always"],
+    "space-before-function-paren": [2, "never"]
+  },
+  "globals": {
+    "browser": false
+  }
+}
+
