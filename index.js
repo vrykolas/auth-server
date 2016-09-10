@@ -2,7 +2,7 @@
  * Module dependencies.
  */
 var bodyParser = require('body-parser');
-var cookieParser = require('cookie-parser')
+var cookieParser = require('cookie-parser');
 var express = require('express');
 var fs = require('fs');
 var https = require('https');
