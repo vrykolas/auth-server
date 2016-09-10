@@ -10,8 +10,5 @@ function login(req, res) {
 }
 
 module.exports = function(app) {
-  app.post('/login',
-    passport.authenticate('local', { session: false }),
-    login
-  );
+  app.post('/login', login);
 };

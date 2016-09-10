@@ -21,6 +21,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(passport.initialize());
+app.use(passport.authenticate('local', { session: false }));
 
 // Express routing
 authenticationRoutes(app);
