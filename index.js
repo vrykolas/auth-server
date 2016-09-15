@@ -31,6 +31,11 @@ app.use(bodyParser.urlencoded({
 app.use(cookieParser(config.cookieSecret));
 app.use(passport.initialize());
 app.use(passport.authenticate('local', { session: false }));
+app.use(function(req, res, next) {
+  console.log(req.cookies);
+  console.log(req.signedcookies);
+  next();
+});
 
 // Express routing
 authenticationRoutes(app);
