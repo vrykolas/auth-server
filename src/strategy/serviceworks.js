@@ -8,6 +8,10 @@ var config = require('../../config/config.json');
 // Passport configuration
 
 var serviceworksStrategy = new LocalStrategy(
+  {
+    usernameField: 'email',
+    passwordField: 'password'
+  },
   function(username, password, done) {
     if(username !== config.username) {
       return done(null, false, { message: 'Incorrect username.' });
